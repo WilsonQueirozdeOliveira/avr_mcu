@@ -17,10 +17,14 @@
 
     sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
 
-    sudo apt install avrdude
+    sudo apt-get install avr-libc binutils-avr gcc-avr avrdude
 
 ### wsl comands
 
     lsusb
 
     sudo avrdude -c usbasp -p m328P -vvv 
+
+### src/blink
+
+    sudo make "for usb permition"
